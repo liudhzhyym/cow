@@ -1,6 +1,8 @@
 #!/bin/bash
 
 # CGO_ENABLED=1 GOOS=darwin GOARCH=amd64 go build
+# ./cow -rc  rc
+# curl  -s 'http://admin.bonbon.online/1.0/uiitem/proxy' -x '127.0.0.1:23510'
 cd "$( dirname "${BASH_SOURCE[0]}" )/.."
 
 version=`grep '^version=' ./install-cow.sh | sed -s 's/version=//'`
